@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" standalone="yes" ?>
+<Other_Info>
+    <Diffflash Value="5" />
+    <Disconnect Time="3" />
+    <APP Version="1.0.0" />
+    <Data Version="1.0.0" />
+    <SMS Displaycount="3" />
+    <File PromotesizeMB="100" />
+    <File ClearsizeMB="100" />
+    <File SplitsizeMB="1000" />
+    <IsDebug Value="1" />
+</Other_Info>

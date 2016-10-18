@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="yes" ?>
+<Bit_Info>
+  <Signal Id="6" permissbit="43" leftbit="44"/>
+  <Signal Id="7" permissbit="45" leftbit="46"/>
+</Bit_Info>

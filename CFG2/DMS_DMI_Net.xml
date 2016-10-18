@@ -1,0 +1,4 @@
+<?xml version="1.0" standalone="yes" ?>
+<Net_Info>
+  <Net  RemoteIP="127.0.0.1" RemotePort="12334" localPort="12345" />
+</Net_Info>

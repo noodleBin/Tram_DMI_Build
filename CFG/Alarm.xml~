@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" standalone="yes" ?>
+<Alarm_Info>
+    <Alarm ID="1" PlayText="禁止通行。" Priority="1" PlayTick="10"/>
+    <Alarm ID="2" PlayText="当前超速。" Priority="1" PlayTick="10"/>  
+    <Alarm ID="3" PlayText="车辆紧急制动。" Priority="1" PlayTick="10"/>
+    <Alarm ID="4" PlayText="车辆常用制动。" Priority="1" PlayTick="10"/>
+    <Alarm ID="100" PlayText="DMI自检完毕，准备启动。" Priority="1" PlayTick="10"/>
+    <Alarm ID="101" PlayText="DMI关闭。" Priority="1" PlayTick="10"/>
+    <Alarm ID="5" PlayText="前方限速%1公里每小时。" Priority="2" PlayTick="10"/>
+    <Alarm ID="6" PlayText="车载%1故障。" Priority="2" PlayTick="1"/>
+    <Alarm ID="7" PlayText="DMI和车载连接断开。" Priority="2" PlayTick="10"/>
+    <Alarm ID="8" PlayText="DMI和车载连接恢复。" Priority="2" PlayTick="10"/>
+    <Alarm ID="9" PlayText="调度短消息，%1。" Priority="2" PlayTick="10"/>
+    <Alarm ID="10" PlayText="当前晚点%1分种%2秒。" Priority="3" PlayTick="10"/>
+    <Alarm ID="11" PlayText="磁盘空间不足，自动清理。" Priority="4" PlayTick="10"/>
+    <Alarm ID="12" PlayText="自动校时%1。" Priority="4" PlayTick="10"/>
+</Alarm_Info>

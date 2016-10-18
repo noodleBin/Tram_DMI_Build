@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" standalone="yes" ?>
+<Alarm_Info>
+    <Display>
+	<Alarm ID="1" Description="overspeed" />
+        <Alarm ID="2" Description="EB" />
+        <Alarm ID="3" Name="SB" />
+        <Alarm ID="4" Name="ELS fail" />
+    </Display>
+    <Sound>
+    	<Alarm ID="1" Description="overspeed" />
+        <Alarm ID="2" Description="EB" />
+        <Alarm ID="3" Name="SB" />
+        <Alarm ID="4" Name="ELS fail" />
+    </Sound>
+</Alarm_Info>
