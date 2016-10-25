@@ -8,5 +8,6 @@
     <File PromotesizeMB="5000" />
     <File ClearsizeMB="5000" />
     <File SplitsizeMB="1000" />
-    <checktime Time="13" />
+    <check time="15" />
+    <send time="255" />
 </Other_Info>

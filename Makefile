@@ -71,7 +71,7 @@ SOURCES       = ../Casco_DMIor/main.cpp \
 		../Casco_DMIor/DMISignal.cpp \
 		../Casco_DMIor/Casco_dmi.cpp \
 		../Casco_DMIor/Dialogwarningbox.cpp \
-		../Casco_DMIor/Tool.cpp qrc_res.cpp \
+		../Casco_DMIor/Limitspeed.cpp qrc_res.cpp \
 		moc_DialogSmstodriver.cpp \
 		moc_Dashboard.cpp \
 		moc_DialogCommstatus.cpp \
@@ -90,7 +90,8 @@ SOURCES       = ../Casco_DMIor/main.cpp \
 		moc_TLEevents.cpp \
 		moc_DMISignal.cpp \
 		moc_Casco_dmi.cpp \
-		moc_Dialogwarningbox.cpp
+		moc_Dialogwarningbox.cpp \
+		moc_Limitspeed.cpp
 OBJECTS       = main.o \
 		els_dmi_protocol.o \
 		DialogSmstodriver.o \
@@ -114,7 +115,7 @@ OBJECTS       = main.o \
 		DMISignal.o \
 		Casco_dmi.o \
 		Dialogwarningbox.o \
-		Tool.o \
+		Limitspeed.o \
 		qrc_res.o \
 		moc_DialogSmstodriver.o \
 		moc_Dashboard.o \
@@ -134,7 +135,8 @@ OBJECTS       = main.o \
 		moc_TLEevents.o \
 		moc_DMISignal.o \
 		moc_Casco_dmi.o \
-		moc_Dialogwarningbox.o
+		moc_Dialogwarningbox.o \
+		moc_Limitspeed.o
 DIST          = ../Qt5.5.1/5.5/gcc/mkspecs/features/spec_pre.prf \
 		../Qt5.5.1/5.5/gcc/mkspecs/common/unix.conf \
 		../Qt5.5.1/5.5/gcc/mkspecs/common/linux.conf \
@@ -293,7 +295,8 @@ DIST          = ../Qt5.5.1/5.5/gcc/mkspecs/features/spec_pre.prf \
 		../Casco_DMIor/DMISignal.h \
 		../Casco_DMIor/Casco_dmi.h \
 		../Casco_DMIor/Dialogwarningbox.h \
-		../Casco_DMIor/Tool.h ../Casco_DMIor/main.cpp \
+		../Casco_DMIor/Public_Variable.h \
+		../Casco_DMIor/Limitspeed.h ../Casco_DMIor/main.cpp \
 		../DMIDataStruct/els_dmi_protocol.cpp \
 		../Casco_DMIor/DialogSmstodriver.cpp \
 		../Casco_DMIor/Dashboard.cpp \
@@ -316,7 +319,7 @@ DIST          = ../Qt5.5.1/5.5/gcc/mkspecs/features/spec_pre.prf \
 		../Casco_DMIor/DMISignal.cpp \
 		../Casco_DMIor/Casco_dmi.cpp \
 		../Casco_DMIor/Dialogwarningbox.cpp \
-		../Casco_DMIor/Tool.cpp
+		../Casco_DMIor/Limitspeed.cpp
 QMAKE_TARGET  = Casco_Tram_DMI
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = Casco_Tram_DMI
@@ -651,8 +654,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../Casco_DMIor/res.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents ../DMIDataStruct/els_dmi_protocol.h ../Casco_DMIor/DialogSmstodriver.h ../Casco_DMIor/Dashboard.h ../Casco_DMIor/DialogCommstatus.h ../Casco_DMIor/DialogDestination.h ../Casco_DMIor/DialogElsmodeselection.h ../Casco_DMIor/DialogLogin.h ../Casco_DMIor/DialogObsstatus.h ../Casco_DMIor/DialogSchedule.h ../Casco_DMIor/DialogTimeshift.h ../Casco_DMIor/DialogTimeupdate.h ../Casco_DMIor/DialogVersion.h ../DMIDataStruct/dmi_els_protocol.h ../Casco_DMIor/TTSWorkerThread.h ../Casco_DMIor/GeoEvents.h ../Casco_DMIor/DMILog.h ../Casco_DMIor/DMISMS.h ../DMIDataStruct/dmi_dms_protocol.h ../DMIDataStruct/dms_dmi_protocol.h ../Casco_DMIor/TLEevents.h ../Casco_DMIor/DMISignal.h ../Casco_DMIor/Casco_dmi.h ../Casco_DMIor/Dialogwarningbox.h ../Casco_DMIor/Tool.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../Casco_DMIor/main.cpp ../DMIDataStruct/els_dmi_protocol.cpp ../Casco_DMIor/DialogSmstodriver.cpp ../Casco_DMIor/Dashboard.cpp ../Casco_DMIor/DialogCommstatus.cpp ../Casco_DMIor/DialogDestination.cpp ../Casco_DMIor/DialogElsmodeselection.cpp ../Casco_DMIor/DialogObsstatus.cpp ../Casco_DMIor/DialogSchedule.cpp ../Casco_DMIor/DialogTimeshift.cpp ../Casco_DMIor/DialogTimeupdate.cpp ../Casco_DMIor/DialogVersion.cpp ../DMIDataStruct/dmi_els_protocol.cpp ../Casco_DMIor/DialogLogin.cpp ../Casco_DMIor/DMILog.cpp ../Casco_DMIor/GeoEvents.cpp ../Casco_DMIor/TTSWorkerThread.cpp ../Casco_DMIor/DMISMS.cpp ../Casco_DMIor/TLEevents.cpp ../DMIDataStruct/dms_dmi_protocol.cpp ../Casco_DMIor/DMISignal.cpp ../Casco_DMIor/Casco_dmi.cpp ../Casco_DMIor/Dialogwarningbox.cpp ../Casco_DMIor/Tool.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../DMIDataStruct/els_dmi_protocol.h ../Casco_DMIor/DialogSmstodriver.h ../Casco_DMIor/Dashboard.h ../Casco_DMIor/DialogCommstatus.h ../Casco_DMIor/DialogDestination.h ../Casco_DMIor/DialogElsmodeselection.h ../Casco_DMIor/DialogLogin.h ../Casco_DMIor/DialogObsstatus.h ../Casco_DMIor/DialogSchedule.h ../Casco_DMIor/DialogTimeshift.h ../Casco_DMIor/DialogTimeupdate.h ../Casco_DMIor/DialogVersion.h ../DMIDataStruct/dmi_els_protocol.h ../Casco_DMIor/TTSWorkerThread.h ../Casco_DMIor/GeoEvents.h ../Casco_DMIor/DMILog.h ../Casco_DMIor/DMISMS.h ../DMIDataStruct/dmi_dms_protocol.h ../DMIDataStruct/dms_dmi_protocol.h ../Casco_DMIor/TLEevents.h ../Casco_DMIor/DMISignal.h ../Casco_DMIor/Casco_dmi.h ../Casco_DMIor/Dialogwarningbox.h ../Casco_DMIor/Public_Variable.h ../Casco_DMIor/Limitspeed.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../Casco_DMIor/main.cpp ../DMIDataStruct/els_dmi_protocol.cpp ../Casco_DMIor/DialogSmstodriver.cpp ../Casco_DMIor/Dashboard.cpp ../Casco_DMIor/DialogCommstatus.cpp ../Casco_DMIor/DialogDestination.cpp ../Casco_DMIor/DialogElsmodeselection.cpp ../Casco_DMIor/DialogObsstatus.cpp ../Casco_DMIor/DialogSchedule.cpp ../Casco_DMIor/DialogTimeshift.cpp ../Casco_DMIor/DialogTimeupdate.cpp ../Casco_DMIor/DialogVersion.cpp ../DMIDataStruct/dmi_els_protocol.cpp ../Casco_DMIor/DialogLogin.cpp ../Casco_DMIor/DMILog.cpp ../Casco_DMIor/GeoEvents.cpp ../Casco_DMIor/TTSWorkerThread.cpp ../Casco_DMIor/DMISMS.cpp ../Casco_DMIor/TLEevents.cpp ../DMIDataStruct/dms_dmi_protocol.cpp ../Casco_DMIor/DMISignal.cpp ../Casco_DMIor/Casco_dmi.cpp ../Casco_DMIor/Dialogwarningbox.cpp ../Casco_DMIor/Limitspeed.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../Casco_DMIor/DialogCommstatus.ui ../Casco_DMIor/DialogDestination.ui ../Casco_DMIor/DialogElsmodeselection.ui ../Casco_DMIor/DialogLogin.ui ../Casco_DMIor/DialogObsstatus.ui ../Casco_DMIor/DialogSchedule.ui ../Casco_DMIor/DialogSmstodriver.ui ../Casco_DMIor/DialogTimeshift.ui ../Casco_DMIor/DialogTimeupdate.ui ../Casco_DMIor/DialogVersion.ui ../Casco_DMIor/Dialogwarningbox.ui $(DISTDIR)/
 	$(COPY_FILE) --parents app_zh.ts $(DISTDIR)/
 
@@ -681,9 +684,9 @@ compiler_rcc_clean:
 qrc_res.cpp: ../Casco_DMIor/res.qrc
 	/home/wubin/Qt5.5.1/5.5/gcc/bin/rcc -name res ../Casco_DMIor/res.qrc -o qrc_res.cpp
 
-compiler_moc_header_make_all: moc_DialogSmstodriver.cpp moc_Dashboard.cpp moc_DialogCommstatus.cpp moc_DialogDestination.cpp moc_DialogElsmodeselection.cpp moc_DialogLogin.cpp moc_DialogObsstatus.cpp moc_DialogSchedule.cpp moc_DialogTimeshift.cpp moc_DialogTimeupdate.cpp moc_DialogVersion.cpp moc_TTSWorkerThread.cpp moc_GeoEvents.cpp moc_DMILog.cpp moc_DMISMS.cpp moc_TLEevents.cpp moc_DMISignal.cpp moc_Casco_dmi.cpp moc_Dialogwarningbox.cpp
+compiler_moc_header_make_all: moc_DialogSmstodriver.cpp moc_Dashboard.cpp moc_DialogCommstatus.cpp moc_DialogDestination.cpp moc_DialogElsmodeselection.cpp moc_DialogLogin.cpp moc_DialogObsstatus.cpp moc_DialogSchedule.cpp moc_DialogTimeshift.cpp moc_DialogTimeupdate.cpp moc_DialogVersion.cpp moc_TTSWorkerThread.cpp moc_GeoEvents.cpp moc_DMILog.cpp moc_DMISMS.cpp moc_TLEevents.cpp moc_DMISignal.cpp moc_Casco_dmi.cpp moc_Dialogwarningbox.cpp moc_Limitspeed.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_DialogSmstodriver.cpp moc_Dashboard.cpp moc_DialogCommstatus.cpp moc_DialogDestination.cpp moc_DialogElsmodeselection.cpp moc_DialogLogin.cpp moc_DialogObsstatus.cpp moc_DialogSchedule.cpp moc_DialogTimeshift.cpp moc_DialogTimeupdate.cpp moc_DialogVersion.cpp moc_TTSWorkerThread.cpp moc_GeoEvents.cpp moc_DMILog.cpp moc_DMISMS.cpp moc_TLEevents.cpp moc_DMISignal.cpp moc_Casco_dmi.cpp moc_Dialogwarningbox.cpp
+	-$(DEL_FILE) moc_DialogSmstodriver.cpp moc_Dashboard.cpp moc_DialogCommstatus.cpp moc_DialogDestination.cpp moc_DialogElsmodeselection.cpp moc_DialogLogin.cpp moc_DialogObsstatus.cpp moc_DialogSchedule.cpp moc_DialogTimeshift.cpp moc_DialogTimeupdate.cpp moc_DialogVersion.cpp moc_TTSWorkerThread.cpp moc_GeoEvents.cpp moc_DMILog.cpp moc_DMISMS.cpp moc_TLEevents.cpp moc_DMISignal.cpp moc_Casco_dmi.cpp moc_Dialogwarningbox.cpp moc_Limitspeed.cpp
 moc_DialogSmstodriver.cpp: ../Qt5.5.1/5.5/gcc/include/QtWidgets/QDialog \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdialog.h \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/qwidget.h \
@@ -823,7 +826,6 @@ moc_DialogSmstodriver.cpp: ../Qt5.5.1/5.5/gcc/include/QtWidgets/QDialog \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QString \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QFile \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
-		../Casco_DMIor/Tool.h \
 		../Casco_DMIor/DMISMS.h \
 		../Casco_DMIor/DialogSmstodriver.h
 	/home/wubin/Qt5.5.1/5.5/gcc/bin/moc $(DEFINES) -I/home/wubin/Qt5.5.1/5.5/gcc/mkspecs/linux-g++-32 -I/home/wubin/Casco_DMIor -I/home/wubin/Qt5.5.1/5.5/gcc/include -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiTools -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiPlugin -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtWidgets -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtMultimedia -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtGui -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtNetwork -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtXml -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtCore -I. ../Casco_DMIor/DialogSmstodriver.h -o moc_DialogSmstodriver.cpp
@@ -1369,6 +1371,10 @@ moc_DialogLogin.cpp: ../Qt5.5.1/5.5/gcc/include/QtWidgets/QDialog \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QMap \
 		../Qt5.5.1/5.5/gcc/include/QtGui/QKeyEvent \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug \
+		../Casco_DMIor/Dialogwarningbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QDir \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qdir.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
 		../Casco_DMIor/DialogLogin.h
 	/home/wubin/Qt5.5.1/5.5/gcc/bin/moc $(DEFINES) -I/home/wubin/Qt5.5.1/5.5/gcc/mkspecs/linux-g++-32 -I/home/wubin/Casco_DMIor -I/home/wubin/Qt5.5.1/5.5/gcc/include -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiTools -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiPlugin -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtWidgets -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtMultimedia -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtGui -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtNetwork -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtXml -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtCore -I. ../Casco_DMIor/DialogLogin.h -o moc_DialogLogin.cpp
 
@@ -1584,6 +1590,7 @@ moc_DialogSchedule.cpp: ../Qt5.5.1/5.5/gcc/include/QtWidgets/QDialog \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qfiledevice.h \
 		../Qt5.5.1/5.5/gcc/include/QtGui/qvector2d.h \
 		../Qt5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QMap \
 		../Casco_DMIor/DialogSchedule.h
 	/home/wubin/Qt5.5.1/5.5/gcc/bin/moc $(DEFINES) -I/home/wubin/Qt5.5.1/5.5/gcc/mkspecs/linux-g++-32 -I/home/wubin/Casco_DMIor -I/home/wubin/Qt5.5.1/5.5/gcc/include -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiTools -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiPlugin -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtWidgets -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtMultimedia -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtGui -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtNetwork -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtXml -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtCore -I. ../Casco_DMIor/DialogSchedule.h -o moc_DialogSchedule.cpp
 
@@ -2187,8 +2194,6 @@ moc_DMILog.cpp: ../Qt5.5.1/5.5/gcc/include/QtCore/QString \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDateTime \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qdatetime.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
-		../Casco_DMIor/Tool.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug \
 		../Casco_DMIor/DMILog.h
 	/home/wubin/Qt5.5.1/5.5/gcc/bin/moc $(DEFINES) -I/home/wubin/Qt5.5.1/5.5/gcc/mkspecs/linux-g++-32 -I/home/wubin/Casco_DMIor -I/home/wubin/Qt5.5.1/5.5/gcc/include -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiTools -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiPlugin -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtWidgets -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtMultimedia -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtGui -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtNetwork -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtXml -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtCore -I. ../Casco_DMIor/DMILog.h -o moc_DMILog.cpp
 
@@ -2493,7 +2498,8 @@ moc_DMISignal.cpp: ../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget \
 		../Casco_DMIor/DMISignal.h
 	/home/wubin/Qt5.5.1/5.5/gcc/bin/moc $(DEFINES) -I/home/wubin/Qt5.5.1/5.5/gcc/mkspecs/linux-g++-32 -I/home/wubin/Casco_DMIor -I/home/wubin/Qt5.5.1/5.5/gcc/include -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiTools -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiPlugin -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtWidgets -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtMultimedia -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtGui -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtNetwork -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtXml -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtCore -I. ../Casco_DMIor/DMISignal.h -o moc_DMISignal.cpp
 
-moc_Casco_dmi.cpp: ../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
+moc_Casco_dmi.cpp: ../Casco_DMIor/Public_Variable.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qobject.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qobjectdefs.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qnamespace.h \
@@ -2703,6 +2709,7 @@ moc_Casco_dmi.cpp: ../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
 		../Casco_DMIor/DialogLogin.h \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/QMessageBox \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/qmessagebox.h \
+		../Casco_DMIor/Dialogwarningbox.h \
 		../Casco_DMIor/DialogTimeshift.h \
 		../Casco_DMIor/DialogTimeupdate.h \
 		../Casco_DMIor/DialogObsstatus.h \
@@ -2714,7 +2721,6 @@ moc_Casco_dmi.cpp: ../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QFileInfoList \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QTextStream \
 		../Casco_DMIor/DMILog.h \
-		../Casco_DMIor/Tool.h \
 		../Casco_DMIor/DMISMS.h \
 		../Casco_DMIor/TTSWorkerThread.h \
 		../Casco_DMIor/qtts.h \
@@ -2723,7 +2729,7 @@ moc_Casco_dmi.cpp: ../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
 		../Casco_DMIor/msp_errors.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QThread \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qthread.h \
-		../Casco_DMIor/Dialogwarningbox.h \
+		../Casco_DMIor/Limitspeed.h \
 		../Casco_DMIor/TLEevents.h \
 		../Casco_DMIor/DMISignal.h \
 		../DMIDataStruct/dms_dmi_protocol.h \
@@ -2838,6 +2844,116 @@ moc_Dialogwarningbox.cpp: ../Qt5.5.1/5.5/gcc/include/QtWidgets/QDialog \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
 		../Casco_DMIor/Dialogwarningbox.h
 	/home/wubin/Qt5.5.1/5.5/gcc/bin/moc $(DEFINES) -I/home/wubin/Qt5.5.1/5.5/gcc/mkspecs/linux-g++-32 -I/home/wubin/Casco_DMIor -I/home/wubin/Qt5.5.1/5.5/gcc/include -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiTools -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiPlugin -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtWidgets -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtMultimedia -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtGui -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtNetwork -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtXml -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtCore -I. ../Casco_DMIor/Dialogwarningbox.h -o moc_Dialogwarningbox.cpp
+
+moc_Limitspeed.cpp: ../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qwindowdefs.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qglobal.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qconfig.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qfeatures.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qsystemdetection.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qprocessordetection.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcompilerdetection.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qtypeinfo.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qtypetraits.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qsysinfo.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qlogging.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qflags.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qbasicatomic.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_bootstrap.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qgenericatomic.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_cxx11.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_gcc.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_msvc.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_armv7.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_armv6.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_armv5.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_ia64.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_mips.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_x86.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qatomic_unix.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qglobalstatic.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qmutex.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qnumeric.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qobjectdefs.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qnamespace.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qobjectdefs_impl.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qwindowdefs_win.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qobject.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qstring.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qchar.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qbytearray.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qrefcount.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qarraydata.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qstringbuilder.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qlist.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qalgorithms.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qiterator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qbytearraylist.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qstringlist.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregexp.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qstringmatcher.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreevent.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qscopedpointer.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qmetatype.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qvarlengtharray.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcontainerfwd.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qisenum.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qobject_impl.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qmargins.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpaintdevice.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qrect.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qsize.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qpoint.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpalette.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qcolor.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qrgb.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qbrush.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qpair.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qvector.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qmatrix.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpolygon.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qregion.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qdatastream.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qiodevice.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qline.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtransform.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpainterpath.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qimage.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpixelformat.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpixmap.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qsharedpointer.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qshareddata.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qhash.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qsharedpointer_impl.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qfont.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qfontmetrics.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qfontinfo.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qsizepolicy.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qcursor.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qkeysequence.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qevent.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qvariant.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qmap.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qdebug.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qtextstream.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qlocale.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qset.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcontiguouscache.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qurl.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qurlquery.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qfile.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qfiledevice.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvector2d.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/QPainter \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpainter.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtextoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpen.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug \
+		../Casco_DMIor/Limitspeed.h
+	/home/wubin/Qt5.5.1/5.5/gcc/bin/moc $(DEFINES) -I/home/wubin/Qt5.5.1/5.5/gcc/mkspecs/linux-g++-32 -I/home/wubin/Casco_DMIor -I/home/wubin/Qt5.5.1/5.5/gcc/include -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiTools -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiPlugin -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtWidgets -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtMultimedia -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtGui -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtNetwork -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtXml -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtCore -I. ../Casco_DMIor/Limitspeed.h -o moc_Limitspeed.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -2998,6 +3114,7 @@ main.o: ../Casco_DMIor/main.cpp ../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplicatio
 		../Qt5.5.1/5.5/gcc/include/QtCore/QTranslator \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qtranslator.h \
 		../Casco_DMIor/Casco_dmi.h \
+		../Casco_DMIor/Public_Variable.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QFile \
@@ -3102,6 +3219,7 @@ main.o: ../Casco_DMIor/main.cpp ../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplicatio
 		../Casco_DMIor/DialogLogin.h \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/QMessageBox \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/qmessagebox.h \
+		../Casco_DMIor/Dialogwarningbox.h \
 		../Casco_DMIor/DialogTimeshift.h \
 		../Casco_DMIor/DialogTimeupdate.h \
 		../Casco_DMIor/DialogObsstatus.h \
@@ -3113,7 +3231,6 @@ main.o: ../Casco_DMIor/main.cpp ../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplicatio
 		../Qt5.5.1/5.5/gcc/include/QtCore/QFileInfoList \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QTextStream \
 		../Casco_DMIor/DMILog.h \
-		../Casco_DMIor/Tool.h \
 		../Casco_DMIor/DMISMS.h \
 		../Casco_DMIor/TTSWorkerThread.h \
 		../Casco_DMIor/qtts.h \
@@ -3122,13 +3239,14 @@ main.o: ../Casco_DMIor/main.cpp ../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplicatio
 		../Casco_DMIor/msp_errors.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QThread \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qthread.h \
-		../Casco_DMIor/Dialogwarningbox.h \
+		../Casco_DMIor/Limitspeed.h \
 		../Casco_DMIor/TLEevents.h \
 		../Casco_DMIor/DMISignal.h \
 		../DMIDataStruct/dms_dmi_protocol.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Casco_DMIor/main.cpp
 
 els_dmi_protocol.o: ../DMIDataStruct/els_dmi_protocol.cpp ../DMIDataStruct/els_dmi_protocol.h \
+		../Casco_DMIor/Public_Variable.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qobject.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qobjectdefs.h \
@@ -3185,7 +3303,19 @@ els_dmi_protocol.o: ../DMIDataStruct/els_dmi_protocol.cpp ../DMIDataStruct/els_d
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDataStream \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qdatastream.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qiodevice.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qpair.h
+		../Qt5.5.1/5.5/gcc/include/QtCore/qpair.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qdebug.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qhash.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qmap.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qtextstream.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qlocale.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qvariant.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qshareddata.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qvector.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qpoint.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qset.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcontiguouscache.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o els_dmi_protocol.o ../DMIDataStruct/els_dmi_protocol.cpp
 
 DialogSmstodriver.o: ../Casco_DMIor/DialogSmstodriver.cpp ../Casco_DMIor/DialogSmstodriver.h \
@@ -3328,9 +3458,43 @@ DialogSmstodriver.o: ../Casco_DMIor/DialogSmstodriver.cpp ../Casco_DMIor/DialogS
 		../Qt5.5.1/5.5/gcc/include/QtCore/QString \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QFile \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
-		../Casco_DMIor/Tool.h \
 		../Casco_DMIor/DMISMS.h \
-		ui_DialogSmstodriver.h
+		ui_DialogSmstodriver.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QVariant \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QComboBox \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qcombobox.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHBoxLayout \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qboxlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlayoutitem.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qgridlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QTextEdit \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtextedit.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtextdocument.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtextoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtextcursor.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtextformat.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpen.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogSmstodriver.o ../Casco_DMIor/DialogSmstodriver.cpp
 
 Dashboard.o: ../Casco_DMIor/Dashboard.cpp ../Casco_DMIor/Dashboard.h \
@@ -3554,6 +3718,41 @@ DialogCommstatus.o: ../Casco_DMIor/DialogCommstatus.cpp ../Casco_DMIor/DialogCom
 		../Qt5.5.1/5.5/gcc/include/QtCore/qdir.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
 		ui_DialogCommstatus.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QVariant \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qicon.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QFrame \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogCommstatus.o ../Casco_DMIor/DialogCommstatus.cpp
 
@@ -3662,6 +3861,45 @@ DialogDestination.o: ../Casco_DMIor/DialogDestination.cpp ../Casco_DMIor/DialogD
 		../Qt5.5.1/5.5/gcc/include/QtGui/qvector2d.h \
 		../Qt5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
 		ui_DialogDestination.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QVariant \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qicon.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QComboBox \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qcombobox.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogDestination.o ../Casco_DMIor/DialogDestination.cpp
 
@@ -3770,6 +4008,45 @@ DialogElsmodeselection.o: ../Casco_DMIor/DialogElsmodeselection.cpp ../Casco_DMI
 		../Qt5.5.1/5.5/gcc/include/QtGui/qvector2d.h \
 		../Qt5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
 		ui_DialogElsmodeselection.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QVariant \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qicon.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QRadioButton \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qradiobutton.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QTranslator \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qtranslator.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug
@@ -3883,6 +4160,41 @@ DialogObsstatus.o: ../Casco_DMIor/DialogObsstatus.cpp ../Casco_DMIor/DialogObsst
 		../Qt5.5.1/5.5/gcc/include/QtCore/qdir.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
 		ui_DialogObsstatus.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QVariant \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qicon.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QFrame \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogObsstatus.o ../Casco_DMIor/DialogObsstatus.cpp
 
@@ -3990,7 +4302,48 @@ DialogSchedule.o: ../Casco_DMIor/DialogSchedule.cpp ../Casco_DMIor/DialogSchedul
 		../Qt5.5.1/5.5/gcc/include/QtCore/qfiledevice.h \
 		../Qt5.5.1/5.5/gcc/include/QtGui/qvector2d.h \
 		../Qt5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QMap \
 		ui_DialogSchedule.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QVariant \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qicon.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QComboBox \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qcombobox.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QFrame \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogSchedule.o ../Casco_DMIor/DialogSchedule.cpp
 
@@ -4098,7 +4451,51 @@ DialogTimeshift.o: ../Casco_DMIor/DialogTimeshift.cpp ../Casco_DMIor/DialogTimes
 		../Qt5.5.1/5.5/gcc/include/QtCore/qfiledevice.h \
 		../Qt5.5.1/5.5/gcc/include/QtGui/qvector2d.h \
 		../Qt5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
-		ui_DialogTimeshift.h
+		ui_DialogTimeshift.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QVariant \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qicon.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHBoxLayout \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qboxlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlayoutitem.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qgridlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QVBoxLayout \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogTimeshift.o ../Casco_DMIor/DialogTimeshift.cpp
 
 DialogTimeupdate.o: ../Casco_DMIor/DialogTimeupdate.cpp ../Casco_DMIor/DialogTimeupdate.h \
@@ -4207,7 +4604,56 @@ DialogTimeupdate.o: ../Casco_DMIor/DialogTimeupdate.cpp ../Casco_DMIor/DialogTim
 		../Qt5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDateTime \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qdatetime.h \
-		ui_DialogTimeupdate.h
+		ui_DialogTimeupdate.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QVariant \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qicon.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QCalendarWidget \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qcalendarwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QDateEdit \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdatetimeedit.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHBoxLayout \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qboxlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlayoutitem.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qgridlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QTimeEdit \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QVBoxLayout \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogTimeupdate.o ../Casco_DMIor/DialogTimeupdate.cpp
 
 DialogVersion.o: ../Casco_DMIor/DialogVersion.cpp ../Casco_DMIor/DialogVersion.h \
@@ -4333,10 +4779,56 @@ DialogVersion.o: ../Casco_DMIor/DialogVersion.cpp ../Casco_DMIor/DialogVersion.h
 		../Qt5.5.1/5.5/gcc/include/QtCore/qmetaobject.h \
 		../Qt5.5.1/5.5/gcc/include/QtNetwork/qnetworkconfiguration.h \
 		ui_DialogVersion.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qicon.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHBoxLayout \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qboxlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlayoutitem.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qgridlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QSlider \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QTabWidget \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QVBoxLayout \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogVersion.o ../Casco_DMIor/DialogVersion.cpp
 
 dmi_els_protocol.o: ../DMIDataStruct/dmi_els_protocol.cpp ../DMIDataStruct/dmi_els_protocol.h \
+		../Casco_DMIor/Public_Variable.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qobject.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qobjectdefs.h \
@@ -4517,7 +5009,62 @@ DialogLogin.o: ../Casco_DMIor/DialogLogin.cpp ../Casco_DMIor/DialogLogin.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QMap \
 		../Qt5.5.1/5.5/gcc/include/QtGui/QKeyEvent \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug \
-		ui_DialogLogin.h
+		../Casco_DMIor/Dialogwarningbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QDir \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qdir.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
+		ui_DialogLogin.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QVariant \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qicon.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QFrame \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHBoxLayout \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qboxlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlayoutitem.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qgridlayout.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLineEdit \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlineedit.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtextcursor.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtextformat.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpen.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtextoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QVBoxLayout \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogLogin.o ../Casco_DMIor/DialogLogin.cpp
 
 DMILog.o: ../Casco_DMIor/DMILog.cpp ../Casco_DMIor/DMILog.h \
@@ -4597,7 +5144,6 @@ DMILog.o: ../Casco_DMIor/DMILog.cpp ../Casco_DMIor/DMILog.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDateTime \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qdatetime.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
-		../Casco_DMIor/Tool.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DMILog.o ../Casco_DMIor/DMILog.cpp
 
@@ -5156,6 +5702,7 @@ DMISignal.o: ../Casco_DMIor/DMISignal.cpp ../Casco_DMIor/DMISignal.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DMISignal.o ../Casco_DMIor/DMISignal.cpp
 
 Casco_dmi.o: ../Casco_DMIor/Casco_dmi.cpp ../Casco_DMIor/Casco_dmi.h \
+		../Casco_DMIor/Public_Variable.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QObject \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qobject.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qobjectdefs.h \
@@ -5366,6 +5913,7 @@ Casco_dmi.o: ../Casco_DMIor/Casco_dmi.cpp ../Casco_DMIor/Casco_dmi.h \
 		../Casco_DMIor/DialogLogin.h \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/QMessageBox \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/qmessagebox.h \
+		../Casco_DMIor/Dialogwarningbox.h \
 		../Casco_DMIor/DialogTimeshift.h \
 		../Casco_DMIor/DialogTimeupdate.h \
 		../Casco_DMIor/DialogObsstatus.h \
@@ -5377,7 +5925,6 @@ Casco_dmi.o: ../Casco_DMIor/Casco_dmi.cpp ../Casco_DMIor/Casco_dmi.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QFileInfoList \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QTextStream \
 		../Casco_DMIor/DMILog.h \
-		../Casco_DMIor/Tool.h \
 		../Casco_DMIor/DMISMS.h \
 		../Casco_DMIor/TTSWorkerThread.h \
 		../Casco_DMIor/qtts.h \
@@ -5386,7 +5933,7 @@ Casco_dmi.o: ../Casco_DMIor/Casco_dmi.cpp ../Casco_DMIor/Casco_dmi.h \
 		../Casco_DMIor/msp_errors.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QThread \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qthread.h \
-		../Casco_DMIor/Dialogwarningbox.h \
+		../Casco_DMIor/Limitspeed.h \
 		../Casco_DMIor/TLEevents.h \
 		../Casco_DMIor/DMISignal.h \
 		../DMIDataStruct/dms_dmi_protocol.h \
@@ -5503,14 +6050,50 @@ Dialogwarningbox.o: ../Casco_DMIor/Dialogwarningbox.cpp ../Casco_DMIor/Dialogwar
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDir \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qdir.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
-		ui_Dialogwarningbox.h
+		ui_Dialogwarningbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QVariant \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QAction \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qicon.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QLabel \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Dialogwarningbox.o ../Casco_DMIor/Dialogwarningbox.cpp
 
-Tool.o: ../Casco_DMIor/Tool.cpp ../Casco_DMIor/Tool.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/QDateTime \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qdatetime.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qstring.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qchar.h \
+Limitspeed.o: ../Casco_DMIor/Limitspeed.cpp ../Casco_DMIor/Limitspeed.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qwidget.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qwindowdefs.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qglobal.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qconfig.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qfeatures.h \
@@ -5539,29 +6122,24 @@ Tool.o: ../Casco_DMIor/Tool.cpp ../Casco_DMIor/Tool.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qglobalstatic.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qmutex.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qnumeric.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qobjectdefs.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qnamespace.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qobjectdefs_impl.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qwindowdefs_win.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qobject.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qstring.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qchar.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qbytearray.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qrefcount.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qnamespace.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qarraydata.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qstringbuilder.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qshareddata.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qhash.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qiterator.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qlist.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qalgorithms.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qiterator.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qbytearraylist.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qstringlist.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qregexp.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qstringmatcher.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qpair.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qdebug.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qmap.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qtextstream.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qiodevice.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qobject.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qobjectdefs.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qobjectdefs_impl.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qcoreevent.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qscopedpointer.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qmetatype.h \
@@ -5569,13 +6147,58 @@ Tool.o: ../Casco_DMIor/Tool.cpp ../Casco_DMIor/Tool.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qcontainerfwd.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qisenum.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qobject_impl.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qlocale.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qvariant.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qvector.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qmargins.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpaintdevice.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qrect.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qsize.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qpoint.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpalette.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qcolor.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qrgb.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qbrush.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qpair.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qvector.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qmatrix.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpolygon.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qregion.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qdatastream.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qiodevice.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qline.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtransform.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpainterpath.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qimage.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpixelformat.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpixmap.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qsharedpointer.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qshareddata.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qhash.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qsharedpointer_impl.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qfont.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qfontmetrics.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qfontinfo.h \
+		../Qt5.5.1/5.5/gcc/include/QtWidgets/qsizepolicy.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qcursor.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qkeysequence.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qevent.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qvariant.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qmap.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qdebug.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qtextstream.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qlocale.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/qset.h \
-		../Qt5.5.1/5.5/gcc/include/QtCore/qcontiguouscache.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Tool.o ../Casco_DMIor/Tool.cpp
+		../Qt5.5.1/5.5/gcc/include/QtCore/qcontiguouscache.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qurl.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qurlquery.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qfile.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/qfiledevice.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qvector2d.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/QPainter \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpainter.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qtextoption.h \
+		../Qt5.5.1/5.5/gcc/include/QtGui/qpen.h \
+		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Limitspeed.o ../Casco_DMIor/Limitspeed.cpp
 
 qrc_res.o: qrc_res.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_res.o qrc_res.cpp
@@ -5636,6 +6259,9 @@ moc_Casco_dmi.o: moc_Casco_dmi.cpp
 
 moc_Dialogwarningbox.o: moc_Dialogwarningbox.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_Dialogwarningbox.o moc_Dialogwarningbox.cpp
+
+moc_Limitspeed.o: moc_Limitspeed.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_Limitspeed.o moc_Limitspeed.cpp
 
 ####### Install
 
