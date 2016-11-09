@@ -6,7 +6,7 @@
     <Alarm ID="4" PlayText="车辆常用制动。" Priority="1" PlayTick="10"/>
     <Alarm ID="100" PlayText="DMI自检完毕，准备启动。" Priority="1" PlayTick="10"/>
     <Alarm ID="101" PlayText="DMI关闭。" Priority="1" PlayTick="10"/>
-    <Alarm ID="5" PlayText="前方限速%1公里每小时。" Priority="2" PlayTick="10"/>
+    <Alarm ID="5" PlayText="前方限速%1公里每小时。" Priority="1" PlayTick="10"/>
     <Alarm ID="6" PlayText="车载%1故障。" Priority="2" PlayTick="10"/>
     <Alarm ID="7" PlayText="DMI和车载连接断开。" Priority="2" PlayTick="10"/>
     <Alarm ID="8" PlayText="DMI和车载连接恢复。" Priority="2" PlayTick="10"/>
@@ -14,4 +14,10 @@
     <Alarm ID="10" PlayText="当前晚点%1分种%2秒。" Priority="3" PlayTick="10"/>
     <Alarm ID="11" PlayText="磁盘空间不足，自动清理。" Priority="4" PlayTick="10"/>
     <Alarm ID="12" PlayText="自动校时%1。" Priority="4" PlayTick="10"/>
+    <Alarm ID="13" PlayText="您已闯红灯。" Priority="1" PlayTick="10"/>
+    <Alarm ID="14" PlayText="雷达已探测到高危障碍物。" Priority="1" PlayTick="1"/>
+    <Alarm ID="15" PlayText="雷达探测到障碍物。" Priority="1" PlayTick="255"/>
+    <Alarm ID="16" PlayText="进入站场图显示。" Priority="1" PlayTick="255"/>
+    <Alarm ID="17" PlayText="离开站场图显示。" Priority="1" PlayTick="255"/>
 </Alarm_Info>
+

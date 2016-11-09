@@ -84,9 +84,9 @@ static const uint qt_meta_data_DialogSchedule[] = {
       14,    0,   79,    2, 0x08 /* Private */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::SChar,    3,
-    QMetaType::Void, QMetaType::SChar,    5,
-    QMetaType::Void, QMetaType::SChar,    7,
+    QMetaType::Void, QMetaType::Short,    3,
+    QMetaType::Void, QMetaType::Short,    5,
+    QMetaType::Void, QMetaType::Short,    7,
 
  // slots: parameters
     QMetaType::Void,
@@ -106,9 +106,9 @@ void DialogSchedule::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         DialogSchedule *_t = static_cast<DialogSchedule *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->sendScheduleId((*reinterpret_cast< qint8(*)>(_a[1]))); break;
-        case 1: _t->sendServiceId((*reinterpret_cast< qint8(*)>(_a[1]))); break;
-        case 2: _t->sendTripId((*reinterpret_cast< qint8(*)>(_a[1]))); break;
+        case 0: _t->sendScheduleId((*reinterpret_cast< qint16(*)>(_a[1]))); break;
+        case 1: _t->sendServiceId((*reinterpret_cast< qint16(*)>(_a[1]))); break;
+        case 2: _t->sendTripId((*reinterpret_cast< qint16(*)>(_a[1]))); break;
         case 3: _t->on_btn_cancel_clicked(); break;
         case 4: _t->on_btn_sch_clicked(); break;
         case 5: _t->on_btn_service_clicked(); break;
@@ -122,19 +122,19 @@ void DialogSchedule::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         int *result = reinterpret_cast<int *>(_a[0]);
         void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef void (DialogSchedule::*_t)(qint8 );
+            typedef void (DialogSchedule::*_t)(qint16 );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&DialogSchedule::sendScheduleId)) {
                 *result = 0;
             }
         }
         {
-            typedef void (DialogSchedule::*_t)(qint8 );
+            typedef void (DialogSchedule::*_t)(qint16 );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&DialogSchedule::sendServiceId)) {
                 *result = 1;
             }
         }
         {
-            typedef void (DialogSchedule::*_t)(qint8 );
+            typedef void (DialogSchedule::*_t)(qint16 );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&DialogSchedule::sendTripId)) {
                 *result = 2;
             }
@@ -179,21 +179,21 @@ int DialogSchedule::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void DialogSchedule::sendScheduleId(qint8 _t1)
+void DialogSchedule::sendScheduleId(qint16 _t1)
 {
     void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
-void DialogSchedule::sendServiceId(qint8 _t1)
+void DialogSchedule::sendServiceId(qint16 _t1)
 {
     void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
-void DialogSchedule::sendTripId(qint8 _t1)
+void DialogSchedule::sendTripId(qint16 _t1)
 {
     void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);

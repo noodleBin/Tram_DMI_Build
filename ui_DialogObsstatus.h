@@ -34,7 +34,7 @@ public:
     {
         if (DialogOBSStatus->objectName().isEmpty())
             DialogOBSStatus->setObjectName(QStringLiteral("DialogOBSStatus"));
-        DialogOBSStatus->resize(366, 74);
+        DialogOBSStatus->resize(366, 81);
         QPalette palette;
         QBrush brush(QColor(255, 255, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -100,7 +100,7 @@ public:
         DialogOBSStatus->setPalette(palette);
         frame = new QFrame(DialogOBSStatus);
         frame->setObjectName(QStringLiteral("frame"));
-        frame->setGeometry(QRect(4, 8, 357, 61));
+        frame->setGeometry(QRect(4, 8, 357, 65));
         QPalette palette1;
         QBrush brush8(QColor(222, 233, 33, 255));
         brush8.setStyle(Qt::SolidPattern);

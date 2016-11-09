@@ -1392,7 +1392,7 @@
      <property name="font">
       <font>
        <family>Sans</family>
-       <pointsize>14</pointsize>
+       <pointsize>12</pointsize>
        <underline>false</underline>
       </font>
      </property>
@@ -4105,7 +4105,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>res/Communication_ELS_DMS_Status0.png</pixmap>
+       <pixmap>res/ELS_DMS_Status0.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -4864,7 +4864,7 @@
       <bool>true</bool>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -6237,7 +6237,7 @@
      <property name="geometry">
       <rect>
        <x>390</x>
-       <y>-2</y>
+       <y>4</y>
        <width>405</width>
        <height>269</height>
       </rect>

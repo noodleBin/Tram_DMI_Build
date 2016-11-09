@@ -32,7 +32,7 @@ public:
     QTabWidget *tabWidget;
     QWidget *tab;
     QLabel *lbl_swname;
-    QWidget *layoutWidget;
+    QWidget *widget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
     QLabel *lblappversionname;
@@ -40,6 +40,9 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QLabel *lbldataversionname;
     QLabel *lbldataversion;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *label;
+    QLabel *lbl_date;
     QWidget *tab_2;
     QSlider *volumeslider;
     QLabel *lbl_mute;
@@ -51,7 +54,7 @@ public:
     {
         if (DialogVersion->objectName().isEmpty())
             DialogVersion->setObjectName(QStringLiteral("DialogVersion"));
-        DialogVersion->resize(573, 320);
+        DialogVersion->resize(800, 480);
         lbl_logo = new QLabel(DialogVersion);
         lbl_logo->setObjectName(QStringLiteral("lbl_logo"));
         lbl_logo->setGeometry(QRect(10, 10, 200, 87));
@@ -59,7 +62,7 @@ public:
         lbl_logo->setScaledContents(true);
         tabWidget = new QTabWidget(DialogVersion);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
-        tabWidget->setGeometry(QRect(10, 114, 557, 201));
+        tabWidget->setGeometry(QRect(10, 96, 755, 357));
         QFont font;
         font.setPointSize(16);
         tabWidget->setFont(font);
@@ -67,22 +70,22 @@ public:
         tab->setObjectName(QStringLiteral("tab"));
         lbl_swname = new QLabel(tab);
         lbl_swname->setObjectName(QStringLiteral("lbl_swname"));
-        lbl_swname->setGeometry(QRect(44, -2, 461, 57));
+        lbl_swname->setGeometry(QRect(160, 42, 461, 57));
         QFont font1;
         font1.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
         font1.setPointSize(24);
         font1.setBold(true);
         font1.setWeight(75);
         lbl_swname->setFont(font1);
-        layoutWidget = new QWidget(tab);
-        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(104, 70, 281, 91));
-        verticalLayout = new QVBoxLayout(layoutWidget);
+        widget = new QWidget(tab);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(120, 148, 537, 129));
+        verticalLayout = new QVBoxLayout(widget);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        lblappversionname = new QLabel(layoutWidget);
+        lblappversionname = new QLabel(widget);
         lblappversionname->setObjectName(QStringLiteral("lblappversionname"));
         QFont font2;
         font2.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
@@ -91,7 +94,7 @@ public:
 
         horizontalLayout->addWidget(lblappversionname);
 
-        lblappversion = new QLabel(layoutWidget);
+        lblappversion = new QLabel(widget);
         lblappversion->setObjectName(QStringLiteral("lblappversion"));
         lblappversion->setFont(font2);
 
@@ -102,13 +105,13 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        lbldataversionname = new QLabel(layoutWidget);
+        lbldataversionname = new QLabel(widget);
         lbldataversionname->setObjectName(QStringLiteral("lbldataversionname"));
         lbldataversionname->setFont(font2);
 
         horizontalLayout_2->addWidget(lbldataversionname);
 
-        lbldataversion = new QLabel(layoutWidget);
+        lbldataversion = new QLabel(widget);
         lbldataversion->setObjectName(QStringLiteral("lbldataversion"));
         lbldataversion->setFont(font2);
 
@@ -117,12 +120,27 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_2);
 
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        label = new QLabel(widget);
+        label->setObjectName(QStringLiteral("label"));
+
+        horizontalLayout_3->addWidget(label);
+
+        lbl_date = new QLabel(widget);
+        lbl_date->setObjectName(QStringLiteral("lbl_date"));
+
+        horizontalLayout_3->addWidget(lbl_date);
+
+
+        verticalLayout->addLayout(horizontalLayout_3);
+
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
         volumeslider = new QSlider(tab_2);
         volumeslider->setObjectName(QStringLiteral("volumeslider"));
-        volumeslider->setGeometry(QRect(80, 48, 309, 65));
+        volumeslider->setGeometry(QRect(118, 124, 309, 65));
         QSizePolicy sizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -154,24 +172,24 @@ public:
         volumeslider->setTickInterval(0);
         lbl_mute = new QLabel(tab_2);
         lbl_mute->setObjectName(QStringLiteral("lbl_mute"));
-        lbl_mute->setGeometry(QRect(472, 44, 64, 64));
+        lbl_mute->setGeometry(QRect(584, 124, 64, 64));
         lbl_sub_vol = new QLabel(tab_2);
         lbl_sub_vol->setObjectName(QStringLiteral("lbl_sub_vol"));
-        lbl_sub_vol->setGeometry(QRect(28, 52, 48, 48));
+        lbl_sub_vol->setGeometry(QRect(32, 130, 48, 48));
         lbl_sub_vol->setScaledContents(true);
         lbl_add_vol = new QLabel(tab_2);
         lbl_add_vol->setObjectName(QStringLiteral("lbl_add_vol"));
-        lbl_add_vol->setGeometry(QRect(394, 52, 48, 48));
+        lbl_add_vol->setGeometry(QRect(458, 130, 48, 48));
         lbl_add_vol->setScaledContents(true);
         tabWidget->addTab(tab_2, QString());
         btn_ok = new QPushButton(DialogVersion);
         btn_ok->setObjectName(QStringLiteral("btn_ok"));
-        btn_ok->setGeometry(QRect(448, 26, 103, 47));
+        btn_ok->setGeometry(QRect(664, 28, 103, 47));
         btn_ok->setFont(font);
 
         retranslateUi(DialogVersion);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(DialogVersion);
@@ -186,6 +204,8 @@ public:
         lblappversion->setText(QApplication::translate("DialogVersion", "1.0.0", 0));
         lbldataversionname->setText(QApplication::translate("DialogVersion", "\346\225\260\346\215\256\347\211\210\346\234\254\357\274\232", 0));
         lbldataversion->setText(QApplication::translate("DialogVersion", "1.0.0", 0));
+        label->setText(QApplication::translate("DialogVersion", "\347\274\226\350\257\221\346\227\245\346\234\237\357\274\232", 0));
+        lbl_date->setText(QApplication::translate("DialogVersion", "2016/10/25 18:09:01", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("DialogVersion", "\347\211\210\346\234\254", 0));
         lbl_mute->setText(QApplication::translate("DialogVersion", "TextLabel", 0));
         lbl_sub_vol->setText(QApplication::translate("DialogVersion", "TextLabel", 0));

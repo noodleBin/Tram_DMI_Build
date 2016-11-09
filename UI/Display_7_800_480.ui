@@ -1023,7 +1023,7 @@
      <property name="geometry">
       <rect>
        <x>588</x>
-       <y>10</y>
+       <y>6</y>
        <width>151</width>
        <height>53</height>
       </rect>
@@ -1312,7 +1312,7 @@
     <widget class="QLabel" name="lbl_namedelay">
      <property name="geometry">
       <rect>
-       <x>440</x>
+       <x>446</x>
        <y>32</y>
        <width>43</width>
        <height>32</height>
@@ -1369,9 +1369,9 @@
     <widget class="QLabel" name="lbl_delay">
      <property name="geometry">
       <rect>
-       <x>480</x>
+       <x>488</x>
        <y>32</y>
-       <width>105</width>
+       <width>117</width>
        <height>32</height>
       </rect>
      </property>
@@ -1415,7 +1415,7 @@
      <property name="font">
       <font>
        <family>Sans</family>
-       <pointsize>14</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4432,7 +4432,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>res/Communication_ELS_DMS_Status0.png</pixmap>
+       <pixmap>res/ELS_DMS_Status0.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>

@@ -882,7 +882,7 @@
     <widget class="QLabel" name="lbl_namedelay">
      <property name="geometry">
       <rect>
-       <x>632</x>
+       <x>612</x>
        <y>56</y>
        <width>49</width>
        <height>28</height>
@@ -939,9 +939,9 @@
     <widget class="QLabel" name="lbl_delay">
      <property name="geometry">
       <rect>
-       <x>680</x>
+       <x>660</x>
        <y>58</y>
-       <width>101</width>
+       <width>137</width>
        <height>25</height>
       </rect>
      </property>
@@ -3218,7 +3218,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>res/Communication_ELS_DMS_Status0.png</pixmap>
+       <pixmap>res/ELS_DMS_Status0.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -5724,26 +5724,6 @@
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <zorder>lbl_schid</zorder>
-       <zorder>lbl_namearrtime_2</zorder>
-       <zorder>lbl_namecursta</zorder>
-       <zorder>lbl_arrtime_2</zorder>
-       <zorder>lbl_deptime</zorder>
-       <zorder>lbl_namenextstaid_2</zorder>
-       <zorder>lbl_namedeptime</zorder>
-       <zorder>lbl_curstaid</zorder>
-       <zorder>lbl_nextstaid_2</zorder>
-       <zorder>lbl_desid</zorder>
-       <zorder>lbl_namedes</zorder>
-       <zorder>lbl_namesch</zorder>
-       <zorder>lbl_downstreamdis</zorder>
-       <zorder>lbl_upstreamtime</zorder>
-       <zorder>lbl_downstreamtime</zorder>
-       <zorder>lbl_namedownstream</zorder>
-       <zorder>lbl_nameupstream</zorder>
-       <zorder>lbl_upstreamdis</zorder>
-       <zorder>widget_DMS</zorder>
-       <zorder>listSMS</zorder>
       </widget>
      </widget>
      <widget class="QWidget" name="tab_geo">

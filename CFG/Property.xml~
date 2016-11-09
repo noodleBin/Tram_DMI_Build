@@ -2,12 +2,13 @@
 <Other_Info>
     <Diffflash Value="5" />
     <Disconnect Time="3" />
-    <APP Version="1.1.0" />
-    <Data Version="1.1.0" />
-    <SMS Displaycount="5" />
-    <File PromotesizeMB="5000" />
-    <File ClearsizeMB="5000" />
-    <File SplitsizeMB="1000" />
+    <APP Version="1.0.0" />
+    <Data Version="1.0.0" />
+    <SMS Displaycount="16" />
+    <File PromotesizeMB="500" />
+    <File ClearsizeMB="500" />
+    <File SplitsizeMB="50" />
     <check time="15" />
-    <send time="10" />
+    <send time="255" />
+    <active end="2" />
 </Other_Info>
