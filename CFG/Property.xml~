@@ -4,7 +4,7 @@
     <Disconnect Time="3" />
     <APP Version="1.0.0" />
     <Data Version="1.0.0" />
-    <SMS Displaycount="16" />
+    <SMS Displaycount="15" />
     <File PromotesizeMB="500" />
     <File ClearsizeMB="500" />
     <File SplitsizeMB="50" />
