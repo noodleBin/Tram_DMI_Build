@@ -2030,15 +2030,15 @@ color: rgb(27, 230, 5);</string>
      <widget class="QLabel" name="lbl_delay">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>230</y>
-        <width>111</width>
+        <x>-8</x>
+        <y>234</y>
+        <width>103</width>
         <height>27</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <pointsize>18</pointsize>
+        <pointsize>11</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>

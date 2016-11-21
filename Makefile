@@ -296,7 +296,8 @@ DIST          = ../Qt5.5.1/5.5/gcc/mkspecs/features/spec_pre.prf \
 		../Casco_DMI/Dialogwarningbox.h \
 		../DMIDataStruct/Public_Variable.h \
 		../Casco_DMI/Limitspeed.h \
-		../Casco_DMI/Dialogshutdown.h ../Casco_DMI/main.cpp \
+		../Casco_DMI/Dialogshutdown.h \
+		../Casco_DMI/tlepublicvariables.h ../Casco_DMI/main.cpp \
 		../DMIDataStruct/els_dmi_protocol.cpp \
 		../Casco_DMI/DialogSmstodriver.cpp \
 		../Casco_DMI/Dashboard.cpp \
@@ -654,7 +655,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../Casco_DMI/res.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents ../DMIDataStruct/els_dmi_protocol.h ../Casco_DMI/DialogSmstodriver.h ../Casco_DMI/Dashboard.h ../Casco_DMI/DialogCommstatus.h ../Casco_DMI/DialogDestination.h ../Casco_DMI/DialogElsmodeselection.h ../Casco_DMI/DialogLogin.h ../Casco_DMI/DialogObsstatus.h ../Casco_DMI/DialogSchedule.h ../Casco_DMI/DialogTimeshift.h ../Casco_DMI/DialogTimeupdate.h ../Casco_DMI/DialogVersion.h ../DMIDataStruct/dmi_els_protocol.h ../Casco_DMI/TTSWorkerThread.h ../Casco_DMI/GeoEvents.h ../Casco_DMI/DMILog.h ../Casco_DMI/DMISMS.h ../DMIDataStruct/dmi_dms_protocol.h ../DMIDataStruct/dms_dmi_protocol.h ../Casco_DMI/TLEevents.h ../Casco_DMI/Casco_dmi.h ../Casco_DMI/Dialogwarningbox.h ../DMIDataStruct/Public_Variable.h ../Casco_DMI/Limitspeed.h ../Casco_DMI/Dialogshutdown.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../DMIDataStruct/els_dmi_protocol.h ../Casco_DMI/DialogSmstodriver.h ../Casco_DMI/Dashboard.h ../Casco_DMI/DialogCommstatus.h ../Casco_DMI/DialogDestination.h ../Casco_DMI/DialogElsmodeselection.h ../Casco_DMI/DialogLogin.h ../Casco_DMI/DialogObsstatus.h ../Casco_DMI/DialogSchedule.h ../Casco_DMI/DialogTimeshift.h ../Casco_DMI/DialogTimeupdate.h ../Casco_DMI/DialogVersion.h ../DMIDataStruct/dmi_els_protocol.h ../Casco_DMI/TTSWorkerThread.h ../Casco_DMI/GeoEvents.h ../Casco_DMI/DMILog.h ../Casco_DMI/DMISMS.h ../DMIDataStruct/dmi_dms_protocol.h ../DMIDataStruct/dms_dmi_protocol.h ../Casco_DMI/TLEevents.h ../Casco_DMI/Casco_dmi.h ../Casco_DMI/Dialogwarningbox.h ../DMIDataStruct/Public_Variable.h ../Casco_DMI/Limitspeed.h ../Casco_DMI/Dialogshutdown.h ../Casco_DMI/tlepublicvariables.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../Casco_DMI/main.cpp ../DMIDataStruct/els_dmi_protocol.cpp ../Casco_DMI/DialogSmstodriver.cpp ../Casco_DMI/Dashboard.cpp ../Casco_DMI/DialogCommstatus.cpp ../Casco_DMI/DialogDestination.cpp ../Casco_DMI/DialogElsmodeselection.cpp ../Casco_DMI/DialogObsstatus.cpp ../Casco_DMI/DialogSchedule.cpp ../Casco_DMI/DialogTimeshift.cpp ../Casco_DMI/DialogTimeupdate.cpp ../Casco_DMI/DialogVersion.cpp ../DMIDataStruct/dmi_els_protocol.cpp ../Casco_DMI/DialogLogin.cpp ../Casco_DMI/DMILog.cpp ../Casco_DMI/GeoEvents.cpp ../Casco_DMI/TTSWorkerThread.cpp ../Casco_DMI/DMISMS.cpp ../Casco_DMI/TLEevents.cpp ../DMIDataStruct/dms_dmi_protocol.cpp ../Casco_DMI/Casco_dmi.cpp ../Casco_DMI/Dialogwarningbox.cpp ../Casco_DMI/Limitspeed.cpp ../Casco_DMI/Dialogshutdown.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../Casco_DMI/DialogCommstatus.ui ../Casco_DMI/DialogDestination.ui ../Casco_DMI/DialogElsmodeselection.ui ../Casco_DMI/DialogLogin.ui ../Casco_DMI/DialogObsstatus.ui ../Casco_DMI/DialogSchedule.ui ../Casco_DMI/DialogSmstodriver.ui ../Casco_DMI/DialogTimeshift.ui ../Casco_DMI/DialogTimeupdate.ui ../Casco_DMI/DialogVersion.ui ../Casco_DMI/Dialogwarningbox.ui ../Casco_DMI/Dialogshutdown.ui $(DISTDIR)/
 	$(COPY_FILE) --parents app_zh.ts $(DISTDIR)/
@@ -2386,8 +2387,6 @@ moc_TLEevents.cpp: ../Qt5.5.1/5.5/gcc/include/QtGui/QPainter \
 		../Qt5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QEvent \
 		../Qt5.5.1/5.5/gcc/include/QtGui/QKeyEvent \
-		../Casco_DMI/DMISignal.h \
-		../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget \
 		../Casco_DMI/TLEevents.h
 	/home/wubin/Qt5.5.1/5.5/gcc/bin/moc $(DEFINES) -I/home/wubin/Qt5.5.1/5.5/gcc/mkspecs/linux-g++-32 -I/home/wubin/Casco_DMI -I/home/wubin/Qt5.5.1/5.5/gcc/include -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiTools -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiPlugin -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtWidgets -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtMultimedia -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtGui -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtNetwork -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtXml -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtCore -I. ../Casco_DMI/TLEevents.h -o moc_TLEevents.cpp
 
@@ -2625,7 +2624,7 @@ moc_Casco_dmi.cpp: ../DMIDataStruct/Public_Variable.h \
 		../Casco_DMI/Limitspeed.h \
 		../Casco_DMI/Dialogshutdown.h \
 		../Casco_DMI/TLEevents.h \
-		../Casco_DMI/DMISignal.h \
+		../Casco_DMI/tlepublicvariables.h \
 		../DMIDataStruct/dms_dmi_protocol.h \
 		../Casco_DMI/Casco_dmi.h
 	/home/wubin/Qt5.5.1/5.5/gcc/bin/moc $(DEFINES) -I/home/wubin/Qt5.5.1/5.5/gcc/mkspecs/linux-g++-32 -I/home/wubin/Casco_DMI -I/home/wubin/Qt5.5.1/5.5/gcc/include -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiTools -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtUiPlugin -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtWidgets -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtMultimedia -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtGui -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtNetwork -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtXml -I/home/wubin/Qt5.5.1/5.5/gcc/include/QtCore -I. ../Casco_DMI/Casco_dmi.h -o moc_Casco_dmi.cpp
@@ -3259,7 +3258,7 @@ main.o: ../Casco_DMI/main.cpp ../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication 
 		../Casco_DMI/Limitspeed.h \
 		../Casco_DMI/Dialogshutdown.h \
 		../Casco_DMI/TLEevents.h \
-		../Casco_DMI/DMISignal.h \
+		../Casco_DMI/tlepublicvariables.h \
 		../DMIDataStruct/dms_dmi_protocol.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Casco_DMI/main.cpp
 
@@ -5545,8 +5544,6 @@ TLEevents.o: ../Casco_DMI/TLEevents.cpp ../Casco_DMI/TLEevents.h \
 		../Qt5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QEvent \
 		../Qt5.5.1/5.5/gcc/include/QtGui/QKeyEvent \
-		../Casco_DMI/DMISignal.h \
-		../Qt5.5.1/5.5/gcc/include/QtWidgets/QWidget \
 		../Qt5.5.1/5.5/gcc/include/QtCore/QDebug \
 		../Qt5.5.1/5.5/gcc/include/QtGui/QPainterPath
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TLEevents.o ../Casco_DMI/TLEevents.cpp
@@ -5846,7 +5843,7 @@ Casco_dmi.o: ../Casco_DMI/Casco_dmi.cpp ../Casco_DMI/Casco_dmi.h \
 		../Casco_DMI/Limitspeed.h \
 		../Casco_DMI/Dialogshutdown.h \
 		../Casco_DMI/TLEevents.h \
-		../Casco_DMI/DMISignal.h \
+		../Casco_DMI/tlepublicvariables.h \
 		../DMIDataStruct/dms_dmi_protocol.h \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/QApplication \
 		../Qt5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
