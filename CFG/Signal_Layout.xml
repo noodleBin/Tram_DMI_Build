@@ -168,7 +168,7 @@
 </LCS>
 <LCS Name="LCS0101" X="10" Y="13" Rotate="0" offset="1">
 <Permiss>
-<Line Color="200 200 30" StartX="11" StartY="16" EndX="11" EndY="3" LineStyle="8"/>
+<Line Color="20 200 200" StartX="11" StartY="16" EndX="11" EndY="3" LineStyle="8"/>
 <Arrow X="11" Y="3" Rotate="90" BrushColor="200 200 30" Color="200 200 30"/>
 </Permiss>
 </LCS>

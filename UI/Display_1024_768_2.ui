@@ -974,7 +974,7 @@ color: rgb(255, 255, 255);</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>res/DriverLogin0.png</pixmap>
+      <pixmap>res/key.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
