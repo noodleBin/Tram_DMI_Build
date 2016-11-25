@@ -124,7 +124,7 @@
 <Rect BrushColor="55 55 55" PenColor="55 55 55" LeftTopX="0" LeftTopY="7" RightBottomX="18" RightBottomY="4"/>
 </Template>
 <Template TemplateID="2" TemplateName="直行交叉渡线">
-<Line Color="255    0  0" StartX="7" StartY="0" EndX="7" EndY="18" LineStyle="6"/>
+<Line Color="200 200 200" StartX="7" StartY="0" EndX="7" EndY="18" LineStyle="6"/>
 <Line Color="200 200 200" StartX="11" StartY="0" EndX="11" EndY="18" LineStyle="6"/>
 <Bezier Color="200 200 200" StartX="7" StartY="6" EndX="11" EndY="13" LineStyle="6"/>
 <Bezier Color="200 200 200" StartX="11" StartY="6" EndX="7" EndY="13" LineStyle="6"/>
@@ -515,7 +515,7 @@
 <Arrow X="11" Y="3" Rotate="90" BrushColor="255 242 0" Color="255 242 0"/>
 </Right>
 <Left>
-<ARC Color=" 255 242 0" StartX="7" StartY="21" EndX="21" EndY="7" StartAngle="180" SpanAngle="-90" LineStyle="8"/>
+<ARC Color="255 242 0" StartX="7" StartY="21" EndX="21" EndY="7" StartAngle="180" SpanAngle="-90" LineStyle="8"/>
 <Line Color="255 242 0" StartX="14" StartY="7" EndX="15" EndY="7" LineStyle="8"/>
 <Line Color="255 242 0" StartX="7" StartY="14" EndX="7" EndY="15" LineStyle="8"/>
 <Arrow X="7" Y="15" Rotate="-90" BrushColor="255 242 0" Color="255 242 0"/>
@@ -703,7 +703,7 @@
 <Line Color="255 242 0" StartX="9" StartY="7" EndX="10" EndY="7" LineStyle="8"/>
 <Line Color="255 242 0" StartX="10" StartY="7" EndX="14" EndY="3" LineStyle="8"/>
 <Line Color="255 242 0" StartX="14" StartY="2" EndX="14" EndY="3" LineStyle="8"/>
-<Arrow X="9" Y="7" Rotate="0" BrushColor="255 242 0" Color="255 242 0"/>
+<Arrow X="9" Y="7" Rotate="180" BrushColor="255 242 0" Color="255 242 0"/>
 </Right>
 </LCS>
 </LCSList>
@@ -1200,9 +1200,9 @@
 <Signal_Entrance SignalName="LCS1201" ViewID="16" ViewRotate="0" TramX="11" TramY="15"/>
 <Signal_Entrance SignalName="LCS1202" ViewID="16" ViewRotate="180" TramX="11" TramY="15"/>
 
-<Signal_Entrance SignalName="LCS1301" ViewID="1" ViewRotate="0" TramX="11" TramY="15"/>
-<Signal_Entrance SignalName="LCS1302" ViewID="1" ViewRotate="0" TramX="7" TramY="15"/>
-<Signal_Entrance SignalName="LCS1304" ViewID="1" ViewRotate="180" TramX="11" TramY="15"/>
+<Signal_Entrance SignalName="LCS1301" ViewID="17" ViewRotate="0" TramX="11" TramY="15"/>
+<Signal_Entrance SignalName="LCS1302" ViewID="17" ViewRotate="0" TramX="7" TramY="15"/>
+<Signal_Entrance SignalName="LCS1304" ViewID="17" ViewRotate="180" TramX="11" TramY="15"/>
 
 <Signal_Entrance SignalName="S0901" ViewID="18" ViewRotate="0" TramX="11" TramY="15"/>
 <Signal_Entrance SignalName="S0902" ViewID="18" ViewRotate="0" TramX="7" TramY="15"/>
