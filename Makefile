@@ -3478,42 +3478,7 @@ DialogSmstodriver.o: ../Casco_DMI/DialogSmstodriver.cpp ../Casco_DMI/DialogSmsto
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QFile \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QObject \
 		../Casco_DMI/DMISMS.h \
-		ui_DialogSmstodriver.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QComboBox \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qcombobox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHBoxLayout \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qboxlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlayoutitem.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qgridlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QTextEdit \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtextedit.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtextdocument.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtextoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtextcursor.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtextformat.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qpen.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QWidget
+		ui_DialogSmstodriver.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogSmstodriver.o ../Casco_DMI/DialogSmstodriver.cpp
 
 Dashboard.o: ../Casco_DMI/Dashboard.cpp ../Casco_DMI/Dashboard.h \
@@ -3737,41 +3702,6 @@ DialogCommstatus.o: ../Casco_DMI/DialogCommstatus.cpp ../Casco_DMI/DialogCommsta
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qdir.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
 		ui_DialogCommstatus.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QFrame \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogCommstatus.o ../Casco_DMI/DialogCommstatus.cpp
 
@@ -3880,45 +3810,6 @@ DialogDestination.o: ../Casco_DMI/DialogDestination.cpp ../Casco_DMI/DialogDesti
 		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvector2d.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
 		ui_DialogDestination.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QComboBox \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qcombobox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogDestination.o ../Casco_DMI/DialogDestination.cpp
 
@@ -4027,45 +3918,6 @@ DialogElsmodeselection.o: ../Casco_DMI/DialogElsmodeselection.cpp ../Casco_DMI/D
 		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvector2d.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
 		ui_DialogElsmodeselection.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QRadioButton \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qradiobutton.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QTranslator \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qtranslator.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QDebug
@@ -4179,41 +4031,6 @@ DialogObsstatus.o: ../Casco_DMI/DialogObsstatus.cpp ../Casco_DMI/DialogObsstatus
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qdir.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
 		ui_DialogObsstatus.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QFrame \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogObsstatus.o ../Casco_DMI/DialogObsstatus.cpp
 
@@ -4323,46 +4140,6 @@ DialogSchedule.o: ../Casco_DMI/DialogSchedule.cpp ../Casco_DMI/DialogSchedule.h 
 		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QMap \
 		ui_DialogSchedule.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QComboBox \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qcombobox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QFrame \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogSchedule.o ../Casco_DMI/DialogSchedule.cpp
 
@@ -4470,51 +4247,7 @@ DialogTimeshift.o: ../Casco_DMI/DialogTimeshift.cpp ../Casco_DMI/DialogTimeshift
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qfiledevice.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvector2d.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
-		ui_DialogTimeshift.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHBoxLayout \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qboxlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlayoutitem.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qgridlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QVBoxLayout \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QWidget
+		ui_DialogTimeshift.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogTimeshift.o ../Casco_DMI/DialogTimeshift.cpp
 
 DialogTimeupdate.o: ../Casco_DMI/DialogTimeupdate.cpp ../Casco_DMI/DialogTimeupdate.h \
@@ -4623,56 +4356,7 @@ DialogTimeupdate.o: ../Casco_DMI/DialogTimeupdate.cpp ../Casco_DMI/DialogTimeupd
 		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtouchdevice.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QDateTime \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qdatetime.h \
-		ui_DialogTimeupdate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QCalendarWidget \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qcalendarwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QDateEdit \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdatetimeedit.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHBoxLayout \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qboxlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlayoutitem.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qgridlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QTimeEdit \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QVBoxLayout \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QWidget
+		ui_DialogTimeupdate.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogTimeupdate.o ../Casco_DMI/DialogTimeupdate.cpp
 
 DialogVersion.o: ../Casco_DMI/DialogVersion.cpp ../Casco_DMI/DialogVersion.h \
@@ -4798,51 +4482,6 @@ DialogVersion.o: ../Casco_DMI/DialogVersion.cpp ../Casco_DMI/DialogVersion.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qmetaobject.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtNetwork/qnetworkconfiguration.h \
 		ui_DialogVersion.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHBoxLayout \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qboxlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlayoutitem.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qgridlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QSlider \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QTabWidget \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QVBoxLayout \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QWidget \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogVersion.o ../Casco_DMI/DialogVersion.cpp
 
@@ -5032,58 +4671,7 @@ DialogLogin.o: ../Casco_DMI/DialogLogin.cpp ../Casco_DMI/DialogLogin.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QDir \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qdir.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
-		ui_DialogLogin.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QFrame \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHBoxLayout \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qboxlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlayoutitem.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qgridlayout.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLineEdit \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlineedit.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtextcursor.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtextformat.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qpen.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qtextoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QVBoxLayout \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QWidget
+		ui_DialogLogin.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogLogin.o ../Casco_DMI/DialogLogin.cpp
 
 DMILog.o: ../Casco_DMI/DMILog.cpp ../Casco_DMI/DMILog.h \
@@ -5974,44 +5562,7 @@ Dialogwarningbox.o: ../Casco_DMI/Dialogwarningbox.cpp ../Casco_DMI/Dialogwarning
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QDir \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qdir.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
-		ui_Dialogwarningbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qcoreapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qeventloop.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QPushButton \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qpushbutton.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractbutton.h
+		ui_Dialogwarningbox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Dialogwarningbox.o ../Casco_DMI/Dialogwarningbox.cpp
 
 Limitspeed.o: ../Casco_DMI/Limitspeed.cpp ../Casco_DMI/Limitspeed.h \
@@ -6242,39 +5793,7 @@ Dialogshutdown.o: ../Casco_DMI/Dialogshutdown.cpp ../Casco_DMI/Dialogshutdown.h 
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/QDir \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qdir.h \
 		/opt/QT5.5.1/5.5/gcc/include/QtCore/qfileinfo.h \
-		ui_Dialogshutdown.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/QVariant \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QAction \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qaction.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qicon.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qactiongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QApplication \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qguiapplication.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qinputmethod.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QButtonGroup \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QHeaderView \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qheaderview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemview.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractscrollarea.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qframe.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qabstractitemmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qitemselectionmodel.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractitemdelegate.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyleoption.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractspinbox.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtGui/qvalidator.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtCore/qregularexpression.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qabstractslider.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qstyle.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabbar.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qtabwidget.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/QLabel \
-		/opt/QT5.5.1/5.5/gcc/include/QtWidgets/qlabel.h
+		ui_Dialogshutdown.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Dialogshutdown.o ../Casco_DMI/Dialogshutdown.cpp
 
 qrc_res.o: qrc_res.cpp 
